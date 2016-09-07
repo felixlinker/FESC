@@ -1,5 +1,7 @@
 
-params [["_unit", objNull, [objNull]]];
+params [["_unit", objNull, [objNull]], ["_checkLocality", true, [true]]];
 
-_unit switchMove (selectRandom [["KIA_gunner_standup01", "Static_Dead", "KIA_passenger_boat_holdleft"]]);
+if (_checkLocality && { !local _unit }) exitWith {};
+
+_unit switchMove (selectRandom ["Static_Dead", "Acts_InjuredLyingRifle01"]);
 _unit setDamage 1;
