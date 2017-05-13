@@ -1,15 +1,15 @@
-class FETT_mission {
-	tag = "FETT";
+class FESC {
+	tag = "FESC";
 	class ambient {
-		file = "FETT_mission\ambient";
+		file = "FESC\ambient";
 		class setAmbientDead {};
 	};
 	class misc {
-		file = "FETT_mission\misc";
+		file = "FESC\misc";
 		class toggleMapIDs {};
 	}
 	class tasks {
-		file = "FETT_mission\tasks";
+		file = "FESC\tasks";
 		class createSynchedTask {};
 		class createSynchedTaskWithArea {};
 		class querySynchedTasks {};
