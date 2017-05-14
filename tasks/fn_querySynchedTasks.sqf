@@ -8,4 +8,4 @@ params ["_player"];
 		_args set [3, _dest select 0];
 	};
 	_args remoteExecCall ["BIS_fnc_taskCreate", _player];
-} forEach (FETT_synchronizedTasks select 1);
+} forEach (FESC_synchronizedTasks select 1);

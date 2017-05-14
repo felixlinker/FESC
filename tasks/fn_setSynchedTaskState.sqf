@@ -7,7 +7,7 @@ params [
 	["_showHint", true, [true]]
 ];
 
-private _task = (FETT_synchronizedTasks select 1) select ((FETT_synchronizedTasks select 0) find _name);
+private _task = (FESC_synchronizedTasks select 1) select ((FESC_synchronizedTasks select 0) find _name);
 _task set [4, _state];
 
 private _destination = _task select 3;

@@ -25,7 +25,7 @@ private _args = +_this;
 _args set [3, _area];
 _args set [6, false]; // disable notification for JIP
 
-[_args] call FETT_task_fnc_storeSynchronized;
+[_args] call FESC_fnc_storeSynchedTask;
 
 _args set [3, _area select 0];
 _args set [6, _showNotification];

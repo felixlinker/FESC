@@ -1,3 +1,3 @@
 if (isServer) then {
-	FETT_synchronizedTasks = [[], []];
+	FESC_synchronizedTasks = [[], []];
 };
