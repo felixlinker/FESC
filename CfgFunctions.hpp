@@ -4,10 +4,15 @@ class FESC {
 		file = "FESC\ambient";
 		class setAmbientDead {};
 	};
+	class events {
+		file = "FESC\events";
+		class endPersistentEvent {};
+		class executePersistentEvent {};
+	};
 	class misc {
 		file = "FESC\misc";
 		class toggleMapIDs {};
-	}
+	};
 	class tasks {
 		file = "FESC\tasks";
 		class createSynchedTask {};
