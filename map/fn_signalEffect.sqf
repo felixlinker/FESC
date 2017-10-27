@@ -16,7 +16,7 @@
                 0 - The marker name
                 1 - The CBA perFrameHandler ID that handles the flashing.
 
-        AUTHOR: [W] Fett_Li
+        AUTHOR: [W] Fett_Li; inspired and assisted by [W] Hjuki
 
 */
 
