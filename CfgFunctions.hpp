@@ -9,6 +9,10 @@ class FESC {
 		class endPersistentEvent {};
 		class executePersistentEvent {};
 	};
+	class map {
+		file = "FESC\map";
+		class signalEffect {};
+	};
 	class misc {
 		file = "FESC\misc";
 		class toggleMapIDs {};
@@ -22,5 +26,9 @@ class FESC {
 		class storeSynchedTask {};
 		class taskPostInit { postInit = 1; };
 		class taskPreInit { preInit = 1; };
+	};
+	class vehicles {
+		file = "FESC\vehicles";
+		class timedRestock {};
 	};
 };
