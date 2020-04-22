@@ -6,12 +6,15 @@ class FESC {
 	};
 	class events {
 		file = "FESC\events";
+		class cbaEvent {};
 		class endPersistentEvent {};
 		class executePersistentEvent {};
+		class preInit { preInit = 1; };
 	};
 	class map {
 		file = "FESC\map";
 		class signalEffect {};
+		class signalEffectStop {};
 	};
 	class misc {
 		file = "FESC\misc";

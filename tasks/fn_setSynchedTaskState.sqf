@@ -7,7 +7,9 @@ params [
 	["_showHint", true, [true]]
 ];
 
-private _task = (FESC_synchronizedTasks select 1) select ((FESC_synchronizedTasks select 0) find _name);
+private _taskIndex = (FESC_synchronizedTasks select 0) find _name;
+if (_taskIndex < 0) exitWith {};
+private _task = (FESC_synchronizedTasks select 1) select _taskIndex;
 _task set [4, _state];
 
 private _destination = _task select 3;
