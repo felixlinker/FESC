@@ -2,6 +2,7 @@ class FESC {
 	tag = "FESC";
 	class ambient {
 		file = "FESC\ambient";
+		class disableAllDoors {};
 		class setAmbientDead {};
 	};
 	class events {
