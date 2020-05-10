@@ -21,6 +21,12 @@ class FESC {
 		file = "FESC\misc";
 		class toggleMapIDs {};
 	};
+	class phases {
+		file = "FESC\phases";
+		class onPhase {};
+		class phases { postInit = 1; };
+		class phasesDefines { preInit = 1; };
+	};
 	class tasks {
 		file = "FESC\tasks";
 		class createSynchedTask {};
