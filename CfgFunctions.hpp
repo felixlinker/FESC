@@ -41,6 +41,7 @@ class FESC {
 	};
 	class vehicles {
 		file = "FESC\vehicles";
+		class clearVehicleInventory {};
 		class timedRestock {};
 	};
 };
