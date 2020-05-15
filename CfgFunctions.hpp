@@ -19,6 +19,8 @@ class FESC {
 	};
 	class misc {
 		file = "FESC\misc";
+		class DLCIdToName {};
+		class getPersonUsedDLCs {};
 		class toggleMapIDs {};
 	};
 	class phases {
