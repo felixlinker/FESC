@@ -22,4 +22,3 @@ if (_destination isEqualTypeParams [[], 0, 0, 0, true]) then {
 } else {
 	[_name, _state, _showHint] remoteExecCall ["BIS_fnc_taskSetState"];
 };
-
