@@ -1,3 +1,5 @@
+if (!isServer) exitWith {};
+
 private _durationNow = [
 	format ["Phase%1", FESC_phaseCurrent + 1]
 ] call BIS_fnc_getParamValue;
