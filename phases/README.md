@@ -7,14 +7,15 @@ Phases only are tracked on the server.
 
 Here are some code examples on how to set up the phases.
 Add the following to your `description.ext` (there are predefined templates up to and including `PHASE_5`):
+
 ```cpp
 class Params {
-	#define PHASE_1_DEFAULT 10
-	#define PHASE_1_OPTS PHASE_1_DEFAULT,5,1
-	#include "FESC\phases\phase1.hpp"
-	#define PHASE_2_DEFAULT 60
-	#define PHASE_2_OPTS 90,75,PHASE_2_DEFAULT,45,30,1
-	#include "FESC\phases\phase2.hpp"
+    #define PHASE_1_DEFAULT 10
+    #define PHASE_1_OPTS PHASE_1_DEFAULT,5,1
+    #include "FESC\phases\phase1.hpp"
+    #define PHASE_2_DEFAULT 60
+    #define PHASE_2_OPTS 90,75,PHASE_2_DEFAULT,45,30,1
+    #include "FESC\phases\phase2.hpp"
 };
 ```
 
@@ -23,7 +24,8 @@ The first lasts 10 minutes by default and can optionally be set to last 1 or 5 m
 The second phase lasts 60 minutes by default.
 
 Now, you might want to add the following code to the `initServer.sqf`:
-```
+
+```sqf
 [
     // When the first phase (indexed by 0) is over...
     0,
