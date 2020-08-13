@@ -36,6 +36,6 @@ Now, you might want to add the following code to the `initServer.sqf`:
     // When the second phase (indexed by 1) is over ...
     1,
     // ... end the mission
-    { [] remoteExecCall BIS_fnc_endMission; }
+    { [] remoteExecCall "BIS_fnc_endMission"; }
 ] call FESC_fnc_onPhase;
 ```
