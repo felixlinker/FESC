@@ -21,6 +21,8 @@ class FESC {
 		file = "FESC\misc";
 		class DLCIdToName {};
 		class getPersonUsedDLCs {};
+		class getSynchedGroups {};
+		class moveAnimated {};
 		class toggleMapIDs {};
 	};
 	class phases {
@@ -28,6 +30,13 @@ class FESC {
 		class onPhase {};
 		class phases { postInit = 1; };
 		class phasesDefines { preInit = 1; };
+	};
+	class spawnSel {
+		file = "FESC\spawnSel";
+		class addSpawnSelAction {};
+		class openSpawnSel {};
+		class readSpawnSelModule {};
+		class spawnPointSelected {};
 	};
 	class tasks {
 		file = "FESC\tasks";
