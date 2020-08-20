@@ -1,4 +1,7 @@
 if (!isServer) exitWith {};
+if (_fnc_scriptNameParent != "postInit" && _fnc_scriptNameParent != _fnc_scriptName) exitWith {
+	["Never call this function yourself"] call BIS_fnc_error;
+};
 
 private _durationNow = [
 	format ["Phase%1", FESC_phaseCurrent + 1]
