@@ -18,14 +18,11 @@ params [
 	["_movableSource", objNull, [objNull]],
 	// Module setting the strategic map
 	["_mapModule", objNull, [objNull]],
-	// Time after mission start when the action will be removed (in seconds);
-	// set 0 to disable.
+	// Time after which the action will be removed (in seconds); set 0 to disable.
 	["_expiresAfter", 600, [0]]
 ];
 
 if (player != _selector) exitWith {};
-// Might happen by JIP
-if (time > _expiresAfter) exitWith {};
 
 private _action = _target addAction [
 	"Startpunkt auswählen",
@@ -44,7 +41,7 @@ if (_expiresAfter > 0) then {
 	[{
 		params ["_target", "_action"];
 		_target removeAction _action;
-	}, [_target, _action], _expiresAfter - time] call CBA_fnc_waitAndExecute;
+	}, [_target, _action], _expiresAfter] call CBA_fnc_waitAndExecute;
 };
 
 _action
